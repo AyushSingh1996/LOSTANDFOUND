@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+        <item android:title="Categories">
+            <menu>
+                <item
+                    android:id="@+id/nav_Lost"
+                    android:icon="@drawable/lost"
+                    android:title="Lost" />
+                <item
+                    android:id="@+id/nav_Found"
+                    android:icon="@drawable/found"
+                    android:title="Found" />
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/nav_qr_code"
+            android:icon="@drawable/qr_code"
+            android:title="Scan QR Code" />
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/user100"
+            android:title="Profile" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/settings"
+            android:title="Settings" />
+
+    <item
+        android:id="@+id/nav_signout"
+        android:icon="@drawable/ic_action_cancel"
+        android:title="Sign Out" />
+
+
+
+</menu>

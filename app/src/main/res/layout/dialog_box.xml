@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:animationCache="true"
+    android:backgroundTint="#03838181"
+    android:clickable="true"
+    android:elevation="4dp"
+    android:padding="5dp"
+    android:translationZ="6dp"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="1dp"
+    card_view:cardMaxElevation="2dp"
+    card_view:contentPadding="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/dialog_lost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="#03838181"
+            android:drawableLeft="@drawable/lost"
+            android:fontFamily="sans-serif"
+            android:text="Lost"
+            android:translationZ="10dp"
+            android:textColor="@color/pintresttext"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/dialog_found"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:translationZ="10dp"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="#03838181"
+            android:drawableLeft="@drawable/found"
+            android:fontFamily="sans-serif"
+            android:inputType="text"
+            android:text="Found"
+            android:textColor="@color/pintresttext"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/dialog_ScanQR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="4dp"
+            android:translationZ="10dp"
+            android:backgroundTint="#03838181"
+            android:drawableLeft="@drawable/qr_code"
+            android:fontFamily="sans-serif"
+            android:inputType="text"
+            android:text="Scan QR Code"
+            android:textColor="@color/pintresttext"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

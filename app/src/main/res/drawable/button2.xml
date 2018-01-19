@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <corners
+        android:bottomLeftRadius="7dp"
+        android:bottomRightRadius="7dp"
+        android:topLeftRadius="7dp"
+        android:topRightRadius="7dp" />
+
+
+<gradient
+    android:startColor="@color/QRCodeWhiteColor"
+    android:centerColor="@color/QRCodeWhiteColor"
+    android:endColor="@color/QRCodeWhiteColor"/>
+    <padding
+        android:bottom="0dp"
+        android:left="0dp"
+        android:right="0dp"
+        android:top="0dp" />
+
+
+    <stroke
+        android:width="2dp"
+        android:color="#b6b3b3"
+        />
+</shape>

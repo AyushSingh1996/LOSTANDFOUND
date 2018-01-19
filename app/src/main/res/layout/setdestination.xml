@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pintrest"
+    android:orientation="vertical"
+    android:visibility="visible"
+    >
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="8"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@drawable/button2">
+
+        <Button
+            android:id="@+id/btnGetAddressfromMarker"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button2"
+            android:backgroundTint="@color/pintrestbutton"
+            android:text="Get Address from Marker"
+            android:translationZ="10dp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSetAddress"
+
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/button2"
+        android:backgroundTint="@color/pintrestbutton"
+        android:text="Set Address"
+        android:translationZ="10dp" />
+</LinearLayout>

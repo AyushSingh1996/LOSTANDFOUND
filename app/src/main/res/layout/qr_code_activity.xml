@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/pintrest">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/pintrestappbar"
+        android:elevation="8dp"
+
+        android:titleTextColor="@color/pintresttext" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/appbar"
+        android:layout_height="wrap_content"
+        android:text="This Object Belongs to -"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:elevation="4dp"
+        android:textColor="@color/pintresttext"
+        android:textSize="25dp"
+        android:id="@+id/tv"
+      />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button2"
+        android:backgroundTint="@color/pintrest"
+        android:layout_below="@+id/tv"
+        android:id="@+id/layout"
+        android:layout_centerHorizontal="true"
+       >
+
+
+
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="NAME"
+                android:paddingTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button2"
+                android:elevation="4dp"
+                android:textAlignment="center"
+                android:layout_marginBottom="30dp"
+                android:textAllCaps="true"
+                android:textColor="@color/pintresttext"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+
+
+            <TextView
+                android:id="@+id/textPhoneno"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingTop="5dp"
+
+                android:hint="PHONE NO"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button2"
+                android:elevation="4dp"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/pintresttext"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                />
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonScan"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Scan QR Code"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/layout"
+        android:layout_weight="1"
+        android:background="@drawable/button2"
+        android:backgroundTint="@color/pintrestbutton"
+        android:elevation="4dp"
+        android:textAlignment="center"
+        android:textColor="@color/pintresttext"
+      />
+
+</RelativeLayout>

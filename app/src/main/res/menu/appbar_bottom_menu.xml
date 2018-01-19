@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+
+        android:id="@+id/action_notification"
+        android:icon="@drawable/alertbell"
+        android:title="Notification"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_Nearby"
+        android:icon="@drawable/mapmarker48"
+        android:title="Nearby"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_History"
+        android:icon="@drawable/history"
+        android:title="History"
+        app:showAsAction="always" />
+
+</menu>

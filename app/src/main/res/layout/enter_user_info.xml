@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/signupin"
+
+        android:orientation="vertical"
+        android:scrollbarAlwaysDrawVerticalTrack="true">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="22dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="User Information"
+            android:textColor="#fff"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="70dp"
+            android:elevation="4dp"
+            android:background="@drawable/button"
+            android:backgroundTint="#20000000"
+
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="30dp"
+                android:elevation="4dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/signupinputlayoutFullname">
+
+
+                    <EditText
+                        android:id="@+id/editTextFull_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/user"
+                        android:drawableStart="@drawable/user"
+                        android:elevation="4dp"
+                        android:ems="10"
+                        android:hint="Full Name"
+                        android:inputType="textPersonName"
+
+                        android:padding="5dp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/signupinputlayoutPassword">
+
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/signupinputlayoutMobileNo">
+
+
+                    <EditText
+                        android:id="@+id/mobile_no"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Mobile Number"
+                        android:inputType="phone"
+                        android:layout_marginTop="16dp"
+                        android:drawableLeft="@drawable/phone24"
+                        android:elevation="4dp"
+                        android:padding="5dp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+
+                    <TextView
+                        android:id="@+id/address"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:layout_weight="8"
+                        android:text="Address to fetch here"
+                        android:hint="Address"
+                        android:textSize="20dp"
+                        android:inputType="text"
+                        android:drawableLeft="@drawable/home24"
+                        android:elevation="4dp"
+                        android:scrollHorizontally="true" />
+
+                    <Button
+                        android:id="@+id/btnLocateAddress"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="2"
+                        android:translationZ="10dp"
+                        android:background="@drawable/mapmarker24" />
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/buttonSave"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="22dp"
+                    android:background="@drawable/button"
+                    android:elevation="6dp"
+                    android:text="Save"
+                    android:translationZ="10dp"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:backgroundTint="#40000000"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ImageButton
+
+
+            android:id="@+id/profile_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/user_profile_image_background"
+            android:elevation="6dp"
+            android:src="@drawable/user100"
+            android:translationZ="10dp"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+

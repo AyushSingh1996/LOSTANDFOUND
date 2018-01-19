@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/pintrest"
+
+    app:layout_collapseParallaxMultiplier="1.0">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/pintrestappbar"
+            android:elevation="8dp"
+
+            android:titleTextColor="@color/pintresttext" />
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:scrollbarAlwaysDrawVerticalTrack="true">
+
+            <TextView
+                android:id="@+id/Tag"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/textView"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button2"
+                android:elevation="4dp"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/pintresttext"
+                android:textSize="30dp"
+                android:textStyle="bold|italic"
+
+                />
+
+            <Spinner
+                android:id="@+id/spinner_category"
+
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/Tag"
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button2"
+                android:elevation="4dp"
+                android:popupElevation="12dp"
+                android:prompt="@string/spinner_title"
+                android:textAlignment="center"
+                android:textColor="@color/pintresttext" />
+
+            <EditText
+                android:id="@+id/Type"
+                android:layout_width="fill_parent"
+
+                android:layout_height="40dp"
+                android:layout_below="@+id/spinner_category"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button2"
+                android:elevation="4dp"
+                android:hint="Enter Type"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textColor="@color/pintresttext" />
+
+            <EditText
+                android:id="@+id/ItemName"
+
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+
+                android:layout_below="@+id/Type"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button2"
+                android:elevation="4dp"
+                android:hint="Enter Name"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textColor="@color/pintresttext" />
+
+
+            <LinearLayout
+                android:id="@+id/Layouutimage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentTop="false"
+                android:layout_below="@+id/ItemName"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/getimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:elevation="4dp"
+                    android:src="@drawable/addimage100" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/camera"
+
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button2"
+                        android:backgroundTint="@color/pintrestbutton"
+                        android:elevation="4dp"
+                        android:text="CAMERA"
+                        android:textAlignment="center"
+                        android:textColor="@color/pintresttext" />
+
+                    <Button
+                        android:id="@+id/gallery"
+
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button2"
+                        android:backgroundTint="@color/pintrestbutton"
+                        android:elevation="4dp"
+                        android:text="GALLERY"
+                        android:textAlignment="center"
+
+                        android:textColor="@color/pintresttext" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/descriptionLayout"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_alignParentBottom="false"
+                android:layout_below="@+id/Layouutimage"
+                android:elevation="4dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/description"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp">
+
+                    <EditText
+                        android:id="@+id/EnterDescription"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/button2"
+                        android:elevation="4dp"
+                        android:hint="    Enter Description"
+                        android:inputType="text"
+                        android:maxLines="4"
+                        android:textAlignment="center"
+                        android:textColor="@color/pintresttext"
+
+                        />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/descriptionLayout"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button2"
+                android:orientation="horizontal"
+
+                >
+
+
+                <TextView
+                    android:id="@+id/formaddress"
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:drawableLeft="@drawable/home24"
+
+                    android:elevation="4dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="Address"
+                    android:textAlignment="center"
+                    android:textColor="@color/pintresttext"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/btnformLocateAddress"
+                    android:layout_width="35dp"
+
+                    android:layout_height="35dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/mapmarker24"
+                    android:elevation="4dp"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/Submit"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/address"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="2"
+                android:background="@drawable/button2"
+                android:backgroundTint="@color/pintrestbutton"
+                android:elevation="4dp"
+                android:gravity="center_horizontal"
+                android:paddingTop="10dp"
+                android:text="Submit"
+                android:textAlignment="center"
+                android:textColor="@color/pintresttext" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</ScrollView>
